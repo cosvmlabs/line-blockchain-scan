@@ -1,27 +1,22 @@
 {
-    "chain_name": "Ebony Testnet",
-    "api": {
-        "alpha": ["https://lbs-ebony.line-apps-alpha.com"],
-        "beta": ["https://lbs-ebony.line-apps-beta.com"],
-        "prod": ["https://lbs-ebony.line-apps.com"]
-    },
-    "sdk_version": {
-        "alpha": "0.5",
-        "beta": "0.5",
-        "prod": "0.5"
-    },
-    "coin_type": "438",
-    "min_tx_fee": "8000",
+    "chain_name": "cosvm",
+    "registry_name": "cosvm",
+    "api": [
+              {"provider": "CVM", "address": "https://api.cosvm.net"}
+    ],
+    "rpc": [
+        {"provider": "Golden Ratio Staking", "address": "https://rpc.cosvm.net"}
+    ],
+    "sdk_version": "0.45.1",
+    "coin_type": "60",
+    "min_tx_fee": "800",
+    "addr_prefix": "cosvm",
+    "logo": "/logos/cosmos.svg",
     "assets": [{
-        "base": "tcony",
-        "symbol": "Test LINK(TLN)",
+        "base": "ucvm",
+        "symbol": "CVM",
         "exponent": "6",
-        "coingecko_id": "",
-        "logo": "https://www.line-website.com/link-scan-front-release/img/209a6fff584a69cc9183901efff475ff.png"
-    }],
-    "addr_prefix": "tlink",
-    "logos": {
-        "light": "/icon/LINK-logo-light.png",
-        "dark": "/icon/LINK-logo-dark.png"
-    }
+        "coingecko_id": "cosvm", 
+        "logo": "/logos/cosmos.svg"
+    }]
 }
